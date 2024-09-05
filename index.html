@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/media/butterfly.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Swati Bhatt</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="navbar" id="nav">
+
+                <div class="logo_container">
+                    <img id="logo-icon" src="media/s_icon.png" alt="S-icon">
+                    <div class="logo-text" style=" background: -webkit-linear-gradient(rgb(88,14,168), rgb(153,31,168)); background-clip: text;
+            -webkit-text-fill-color: transparent;">wati <b id="surname">B</b>hatt</div>
+                </div>
+
+                <div class="nav_items">
+                    
+                    <a id="navlink" href="#exp-section">Experience</a>
+                    <a id="navlink" href="#project-section">Projects</a>
+                    <a id="navlink" href="#skills-section">Skills</a>
+                    <a id="navlink" href="#edu-section">Education</a>
+                    <a id="navlink" href="#pastime-section">Pastimes</a>
+                    <a id="navlink" href="#connect-section">Let's Connect</a>
+                </div>
+                <div class="button">
+                    <input 
+                        id="darklight" 
+                        type="button" 
+                        value="🌙" />
+                        
+                    <!-- <button onclick="myFunction()">Light mode</button> -->
+                     <script>
+                        document.getElementById("darklight").addEventListener("click",function(event) {
+                            if (event.target.value === "☀️") {
+                            event.target.value = "🌙";
+                            } else {
+                            event.target.value = "☀️";
+                            }
+                            var element = document.body;
+                            element.classList.toggle("dark-mode");
+                        }
+                       
+                        );
+                    </script>
+                </div>
+            </div>
+            <div class="me">
+                <div class="fadedtext">Swati Bhatt</div>
+                <div class="leftsection">
+                    <p id="greetings"></p>
+                    <script>
+                        var myDate = new Date();
+                        var hrs = myDate.getHours();
+                        var greet;
+
+                        if (hrs < 12)
+                            greet = 'Good Morning🌻';
+                        else if (hrs >= 12 && hrs <= 17)
+                            greet = 'Good Afternoon🌻';
+                        else if (hrs >= 17 && hrs <= 24)
+                            greet = 'Good Evening!🌻';
+                        document.getElementById('greetings').innerHTML ='<b>' + greet + '</b>';
+                    </script>
+
+                    <div class="runningtext">I am a  <span class="role"></span></div>
+                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+                    <script>
+                      var typeData = new Typed(".role", {
+                        strings: [
+                          "Full Stack Developer!",
+                          "Software Developer!",
+                          "ML Enthusiast!",
+                        ],
+                        loop: true,
+                        typeSpeed: 100,
+                        backSpeed: 80,
+                        backDelay: 1000,
+                      });
+                    </script>
+                    <div class="aboutme">
+                        Hii! I'm <b>Swati Bhatt</b>, final year B.Tech(IT) student at GTBIT (GGSIPU). <br>
+                        <br>Passionate about <b>Software</b> and <b>Web Development</b>, I excel in DSA and am delving into <b>Machine Learning</b>.
+                        <br> Eager to apply my skills to real-world challenges and make a meaningful impact.
+                        </div>
+                    <div >
+                        <button class="btn" id="btnid" style="margin-right: 2em;"><a  href="mailto:get.swatibhatt@gamil.com">Contact me</a></button>
+                        <button class="btn" id="btnid"><a  href="https://drive.google.com/file/d/12YJAuHdWnz0UxzOVfd52bRenxKDHOcBb/view?usp=drive_link">My Resume</a></button>
+                </div>
+                </div>
+                <div class="rightsection">
+                    <div class="userimg"><img src="media/menew.jpeg" alt=""></div>
+                    <div class="me-icons">
+                        <div class="dogo"><img src="media/dog.png" alt=""></div>
+                        <div class="code"><img src="media/code.png" alt=""></div>
+                        <div class="travel"><img src="media/travel.png" alt=""></div>
+                        <div class="laptop"><img src="media/laptop.png" alt=""></div>
+                        <div class="mountains"><img src="media/mountains.png" alt=""></div>
+                        <div class="butterfly"><img src="media/butterfly.png" alt=""></div>
+                        <div class="coffee"><img src="media/coffee.png" alt=""></div>
+                        <div class="sunflower"><img src="media/sunflower.png" alt=""></div>
+                    </div>   
+                    
+
+                </div>
+            </div>
+            <div class="experience" id="exp-section">
+                <h2 class="Heading" >Experience</h2>
+                <div class="experience-card-container">
+                    <div class="Experience-card">
+                        <h3 class="headingdisc"><b>Frontend Intern</b> at Department Of Forest and Wildlife, Govt. of. NCT Delhi</h3>
+                        <h4 class="timestamp">Nov 2023 - Jan 2024</h4>
+                        <p class="profile-disc">
+                            👉🏻Developed a responsive grievance resolution website using HTML, CSS, Javascript and Bootstrap ensuring seamless user experience
+                            across various devices and browsers. <br>
+                            👉🏻Implemented a user-friendly interface with sections for lodging grievances, viewing status updates, and contacting support. <br>
+                            👉🏻Collaborated closely with backend developers to implement seamless integration of frontend and backend systems.</p>
+                    </div>
+                    <div class="Experience-card">
+                        <h3 class="headingdisc"><b>Cyber Security Intern</b> at IBM SkillsBuild </h3>
+                        <h4 class="timestamp">Oct 2023 - Nov 2023</h4>
+                        <p class="profile-disc">
+                            👉🏻 Implemented secure encryption mechanisms to safeguard sensitive data during transmission and storage, employing industry-standard
+                            cryptographic protocols and Python libraries. <br>
+                            👉🏻Developed algorithms to conceal one image within another by embedding the most significant pixels of one image into the least significant
+                            pixels of another. <br>
+                            👉🏻Designed and executed decryption algorithms to retrieve and reconstruct the concealed image from the encrypted data.</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="project" id="project-section">
+                <h2 class="Heading" id="project-heading">Projects</h2>
+                <div class="card-container">
+                    <div class="card" id="card1">
+                        <div class="project-number project-number-left ">01</div>
+                        <div class="card-content">
+                            <div class="project-content project-content-left">
+                                <div class="techstack-container">
+                                    <img src="media/html.png" alt=""/>
+                                    <img src="media/css.png" alt=""/>
+                                    <img src="media/tailwind.png" alt=""/>
+                                    <img src="media/javascript.png" alt=""/>
+                                    <img src="media/react.png" alt=""/>
+                                    <img src="media/github.png" alt=""/>
+                                    <img src="media/node.png" alt=""/>   
+                                </div>
+                                <h1 class="card-heading timestamp">Parallax Website</h1>
+                                <p class="card-disc">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus molestias recusandae voluptates,
+                                    fugit id velit accusantium praesentium atque mollitia inventore at.
+                                </p>
+                                <div class="project-button">
+                                    <a  href="#" class="btn" id="btnid" style="margin-right:1em;">Github
+                                        <i title="githublink" class="fa fa-github"></i>
+                                    </a>
+                                    <a href="#" class="btn" id="btnid">Live
+                                        <i title="livelink" class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="card" id="card2">
+                        <div class="project-number project-number-right">02</div>
+                        <div class="card-content">
+                            <div class="project-content project-content-right">
+                                <div class="techstack-container">
+                                    <img src="media/html.png" alt=""/>
+                                    <img src="media/css.png" alt=""/>
+                                    <img src="media/tailwind.png" alt=""/>
+                                    <img src="media/javascript.png" alt=""/>
+                                    <img src="media/react.png" alt=""/>
+                                    <img src="media/github.png" alt=""/>
+                                    <img src="media/node.png" alt=""/>   
+                                </div>
+                                <h1 class="card-heading timestamp">Parallax Website</h1>
+                                <p class="card-disc">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus molestias recusandae voluptates,
+                                    fugit id velit accusantium praesentium atque mollitia inventore at.
+                                </p>
+                                <div class="project-button">
+                                    <a  href="#" class="btn" id="btnid" style="margin-right:1em;">Github<i title="githublink" class="fa fa-github"></i>
+                                    </a>
+                                    <a href="#" class="btn" id="btnid">
+                                        Live<i title="livelink" class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    <div class="card" id="card3">
+                        <div class="project-number project-number-left">03</div>
+                        <div class="card-content">
+                        <div class="project-content project-content-left">
+                            <div class="techstack-container">
+                                <img src="media/html.png" alt=""/>
+                                <img src="media/css.png" alt=""/>
+                                <img src="media/tailwind.png" alt=""/>
+                                <img src="media/javascript.png" alt=""/>
+                                <img src="media/react.png" alt=""/>
+                                <img src="media/github.png" alt=""/>
+                                <img src="media/node.png" alt=""/>   
+                            </div>
+                            <h1 class="card-heading timestamp">Parallax Website</h1>
+                            <p class="card-disc">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus molestias recusandae voluptates,
+                                fugit id velit accusantium praesentium atque mollitia inventore at.
+                            </p>
+                            <div class="project-button">
+                                <a  href="#" class="btn" id="btnid" style="margin-right:1em;">Github
+                                    <i title="githublink" class="fa fa-github"></i>
+                                </a>
+                                <a href="#" class="btn" id="btnid">
+                                    Live<i title="livelink" class="fa fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card" id="card4">
+                        <div class="project-number project-number-right">04</div>
+                        <div class="card-content">
+                            <div class="project-content project-content-right">
+                                <div class="techstack-container">
+                                    <img src="media/html.png" alt=""/>
+                                    <img src="media/css.png" alt=""/>
+                                    <img src="media/tailwind.png" alt=""/>
+                                    <img src="media/javascript.png" alt=""/>
+                                    <img src="media/react.png" alt=""/>
+                                    <img src="media/github.png" alt=""/>
+                                    <img src="media/node.png" alt=""/>   
+                                </div>
+                                <h1 class="card-heading timestamp">Parallax Website</h1>
+                                <p class="card-disc">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus molestias recusandae voluptates,
+                                    fugit id velit accusantium praesentium atque mollitia inventore at.
+                                </p>
+                                <div class="project-button">
+                                    <a  href="#" class="btn" id="btnid" style="margin-right:1em;">Github
+                                        <i title="githublink" class="fa fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="#" class="btn" id="btnid">
+                                        Live<i title="livelink" class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="skills" id="skills-section">
+                <div class="skills-left-section">
+                    <h2 class="Heading"><span>M</span>e & my <span>T</span>echStack</h2>
+                    <div class="skills-subheading">
+                        <p>I have a solid foundation in <b>Data Structures and Algorithms</b> with <b>C++</b>, 
+                             which enhances my problem-solving skills and helps me write efficient code for complex challenges.
+                        </p><br>
+                        <p>In web development, I work with <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b> to build interactive sites. 
+                            I use ReactJS for dynamic interfaces, and incorporate tools like <b>Bootstrap</b> and <b>Tailwind CSS</b> for styling. 
+                            On the backend, I rely on <b>ExpressJS</b> and <b>NodeJS</b>, with <b>MongoDB</b> handling data management.
+                        </p><br>
+                        <p>
+                            I’m also exploring machine learning, working with <b>Natural Language Processing (NLP)</b>, <b>image processing</b> and <b>generative AI</b>. 
+                            I use libraries like <b>NumPy</b> for data manipulation and <b>PowerBI</b> and <b>SQL</b> for data analysis and visualization.
+                        </p><br>
+                    </div>
+                </div>
+                <div class="skills-right-section">
+                    <img class="blob" src="media/blob.png" alt="" >
+                    <img class="skills-icon" src="media/skills1.png" alt=""/>
+                    <img class="skills-icon" src="media/skills2.png" alt=""/>
+                    <img class="skills-icon" src="media/skills3.png" alt=""/>
+                    <img class="skills-icon" src="media/skills4.png" alt=""/>
+                    <img class="skills-icon" src="media/skills5.png" alt=""/>
+                    <img class="skills-icon" src="media/skills6.png" alt=""/>
+                    <img class="skills-icon" src="media/skills7.png" alt=""/>
+                    <img class="skills-icon" src="media/skills8.png" alt=""/>  
+                    <img class="skills-icon" src="media/skills9.png" alt=""/>
+                    <img class="skills-icon" src="media/skills10.png" alt=""/>
+                    <img class="skills-icon" src="media/skills11.png" alt=""/>
+                    <img class="skills-icon" src="media/skills12.png" alt=""/>
+                    <img class="skills-icon" src="media/skills13.png" alt=""/>
+                    <img class="skills-icon" src="media/skills14.png" alt=""/>
+                    <img class="skills-icon" src="media/skills15.png" alt=""/>  
+                    <img class="skills-icon" src="media/skills16.png" alt=""/>
+                    <img class="skills-icon" src="media/skills17.png" alt=""/>
+                    <img class="skills-icon" src="media/skills18.png" alt=""/>
+                    <img class="skills-icon" src="media/skills19.png" alt=""/>
+                    <img class="skills-icon" src="media/skills20.png" alt=""/>
+
+                </div>
+            </div>
+            <div class="experience" id="edu-section">
+                <h2 class="Heading" >Education</h2>
+                <div class="experience-card-container">
+                    <div class="Experience-card">
+                        <h3 class="headingdisc"><b>Graduation </b>@Guru Tegh Bahadur Institute of Technology (GGSIPU) </h3>
+                        <h4 class="timestamp">Dec 2021 - Jun 2025</h4>
+                        <p class="profile-disc">
+                            👩🏻‍🎓 <a href="https://www.ipuranklist.com/student/05013203121" style="text-decoration: none;"><b>9.403 CGPA</b></a>(Till 6th sem)<br>
+                            🧚🏼‍♀️ <b>Top performer</b> in IT branch of college and <b>ranked 32nd in university-wide</b> IT branch out of 1500+ Students.
+                            <br>
+                            🧚🏼‍♀️ Actively participated as an <b>IEEE member</b> in college, volunteered in international conferences like Ground zero
+                            rebooted, 2022. <br>
+                            🧚🏼‍♀️ Attended Various Industrial Visits, hackathons, quizes as extra curricular.</p>
+                    </div>
+                    <div class="Experience-card">
+                        <h3 class="headingdisc"><b>Senior Secondary (XII)</b> @School Of Excellence, Dwarka (CBSE) </h3>
+                        <h4 class="timestamp">Apr 2020 - Jun 2021</h4>
+                        <p class="profile-disc">
+                            👩🏻‍🎓 <b>94.33%</b> <br>
+                            🧚🏼‍♀️ Scored <b>99/100</b> in computer Science with Python.<br></p>
+                    </div> 
+                    <div class="Experience-card">
+                        <h3 class="headingdisc"><b>Matriculation (X)</b> @Govt. co-ed Senior Sec. School, Dwarka Sec-22 (CBSE)</h3>
+                        <h4 class="timestamp">Apr 2018 - May 2019</h4>
+                        <p class="profile-disc">
+                            👩🏻‍🎓 <b>95.71%</b> <br>
+                            🧚🏼‍♀️ Scored <b>100/100</b> in Information Technology.<br>
+                            🧚🏼‍♀️ Ranked within <b>Top 10</b> in the <b>South West district</b> of Delhi for Class 10th CBSE board examination, <b>Top scorer in the
+                                School. </b> <br>
+                            🧚🏼‍♀️ Secured Second postiton in Zonal level Science Debate Competition 2018. <br>
+                            🧚🏼‍♀️ Secured 1st Position in Mental Maths Quiz Competition Cluster Level 2018-19. <br>
+                            🧚🏼‍♀️ Secured 3rd Position in Mental Maths Quiz Competition Cluster Level 2017-18. <br>
+                            🧚🏼‍♀️ 1st postion in Rangoli competitions school level 2018-19, 2017-18.
+                            
+                        </p>
+
+                    </div> 
+                </div>
+            </div>
+            <div id="pastime-section" class="pastime">
+                <div class="pastime-heading"><h2 class="Heading">I ocassionally do:</h2></div>
+                <div class="pastime-subheding">
+                    <h3 class="headingdisc">Write✍🏻</h3></div>
+                
+                <div class="pastime-imgs">
+                    <div class="pastime-content">
+                        <a href="https://photos.app.goo.gl/ozuxcmd6v7C8RBzZ8"><img src="media/write1.png" alt=""></a>
+                    </div>
+                    <div class="pastime-content">
+                        <a href="https://photos.app.goo.gl/StxqULNNgeehg5Y6A"><img src="media/write2.png" alt=""></a>
+                    </div>
+                    <div class="pastime-content">
+                        <a href="https://photos.app.goo.gl/fJiFrDzDZ3BSn6uU8"><img src="media/write3.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="pastime-subheding">
+                    <h3 class="headingdisc">Draw🎨</h3></div>
+                <div class="pastime-imgs">
+                    <div class="pastime-content">
+                        <a href="#"><img src="media/draw1.jpg" alt=""></a>
+                    </div>
+                    <div class="pastime-content">
+                        <a href="#"><img src="media/draw2.jpg" alt=""></a>
+                    </div>
+                    <div class="pastime-content">
+                        <a href="#"><img src="media/draw3.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="contactme" id="connect-section">
+                <div class="contactme-heading Heading"><h3>Contact Me!</h3></div>
+                <div class="contactme-subheading headingdisc"><h3>Have Questions? Feel free to ask, suggest, feedback...I'd Love to Hear from You!</h3></div>
+                <div class="contactme-form">
+                    <form class="form" action="https://formspree.io/f/manwkyjy" method="post" id="form">
+                    <div class="form-section">
+                        <input class="form-name" type="text" placeholder="Your Name " id="name" name="name" required/>
+                    </div>
+                    <div class="form-section">
+                        <input class="form-name" type="email" placeholder="Your Email " id="email" name="email" required/>
+                    </div>
+                    <div class="form-section">
+                        <input class="form-name" type="text" name="subject" id="subject" placeholder="Subject" required/>
+                    </div>
+                    <div class="form-message form-section">
+                        <textarea name="msg" id="msg" cols="30" rows="8" class="form-name"
+                    placeholder="Enter your message :)" required></textarea>
+                    </div>
+                    <div >
+                    <button type="submit" class="btn" id="submit-btn" onclick="fun()">
+                        Send Message <i class="fa fa-paper-plane"></i>
+                      </button>
+                    </div>
+                    <script>
+                        function fun(){
+                            const username=document.getElementById('name');
+                            const mess=document.getElementById('msg');
+                            const mail=document.getElementById('email');
+                            const sub=document.getElementById('subject');
+                            const usernamevalue=username.value.trim();
+                            const mailvalue=mail.value.trim();
+                            const messvalue=username.value.trim();
+                            const subvalue=username.value.trim();
+                            if (usernamevalue!='' && mailvalue!=''&& messvalue!=''&& subvalue!=''){
+                                document.getElementById('form').submit();
+                                document.getElementById('form').reset();
+                            }
+                        }
+                    </script>
+                    </form>
+                </div>
+              </div>
+        </div>
+        <div class="footer">
+            <div class="navi">
+               <div class="footerlinks">
+                <div class="footlink"> <a href="#exp-section">Experience</a></div>
+                <div class="footlink"><a href="#project-section">Projects</a></div>
+                <div class="footlink"><a href="#skills-section">Skills</a></div>
+                <div class="footlink"><a href="#edu-section">Education</a></div>
+             
+               </div>
+                <div class="reachme">
+                    <a href="https://linkedin.com/in/swatibhatt153">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/swati-bhatt">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href="https://x.com/bhatt_swatii">
+                        <i class="fa fa-twitter"></i>
+                    </a> 
+                    <a href="https://www.instagram.com/bhatt_swatii/">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:get.swatibhatt@gmail.com">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                    <a href="https://t.me/swati_bhatt">
+                        <i class="fa fa-telegram"></i>
+                    </a>
+                    <a href="#nav">
+                        <i class="fa fa-arrow-circle-up"></i>
+                    </a>
+
+                </div>
+            </div>
+            <div class="footer-fadedtext" >Swati Bhatt</div>
+        </div>
+    </div>  
+</body>
+</html>
+
