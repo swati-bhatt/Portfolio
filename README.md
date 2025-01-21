@@ -7,7 +7,7 @@ My portfolio website highlights my skills, projects, and experiences in a simple
 
 A space to explore what I do, my background, and how I approach my work, all in just one convenient place.
 
-[Visit Now🚀](https://swati-bhatt.github.io/Portfolio/)
+[Visit Now🚀](https://swatibhatt.vercel.app/)
 
 
 ##  ☞Tech Stack Used 🖇️
